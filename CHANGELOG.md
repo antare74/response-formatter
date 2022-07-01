@@ -1,3 +1,9 @@
+commit f90a758590f93b832f605c827e6553cc8e0d3adf
+Author: antare74 <mc.revs404@gmail.com>
+Date:   Fri Jul 1 14:04:39 2022 +0700
+
+    add change log and update example usage and response
+
 commit 8697f617b6a1e3c0d113fc2a8c38804312023adc
 Author: antare74 <mc.revs404@gmail.com>
 Date:   Fri Jul 1 12:55:19 2022 +0700

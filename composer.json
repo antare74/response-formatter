@@ -1,6 +1,12 @@
 {
     "name": "antare74/response-formatter",
     "description": "This package is used to format the response in a standardized way as json format to help the frontend to understand the response and handle the API response easily.",
+    "keywords": [
+    	"laravel",
+    	"json",
+    	"formatter",
+    	"API"
+    ],
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -15,5 +21,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": "^7.0.33"
+    }
 }
