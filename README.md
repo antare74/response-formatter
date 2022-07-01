@@ -16,7 +16,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> I created this package to make it easier to format the response from a controller. I have used this package in my projects and I hope you enjoy it!</p>
     <br> 
 </p>
 
