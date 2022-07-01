@@ -8,8 +8,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/antare74/response-formatter.svg)](https://github.com/antare74/response-formatter/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/antare74/response-formatter.svg)](https://github.com/antare74/response-formatter/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -25,7 +25,6 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Usage](#usage)
-- [Built Using](#built_using)
 - [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
@@ -57,7 +56,7 @@ composer require antare74/response-formatter
 
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+Example Usage.
 ```
 <?php
 
@@ -76,18 +75,54 @@ use Antare74\ResponseFormatter\Format;
 */
 
 Route::get('/success', function () {
-    return Format::success(null, 'Welcome to API');
+    return Format::success([
+        'name' => 'Antare74',
+        'age' => '74',
+        'address' => 'Jakarta',
+    ], 'Success Message');
 });
 
 Route::get('/error', function () {
-    return Format::success(null, 'Welcome to API');
+    return Format::error([
+        'my_error_data' => 'Error Message',
+    ], 'Error Message', 500);
 });
 
 ```
-## ⛏️ Built Using <a name = "built_using"></a>
+Example Success Response.
+```
+{
+  "meta": {
+    "code": 200,
+    "status": "success",
+    "message": "Success Message",
+    "is_paginated": false
+  },
+  "pagination": [
+    
+  ],
+  "data": {
+    "name": "Antare74",
+    "age": "74",
+    "address": "Jakarta"
+  }
+}
+```
 
-- [Laravel](https://www.mongodb.com/) - Database
-
+Example Error Response.
+```
+{
+  "meta": {
+    "code": 500,
+    "status": "error",
+    "message": "Error Message",
+    "is_paginated": false
+  },
+  "data": {
+    "my_error_data": "Error Message"
+  }
+}
+```
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@antare74](https://github.com/antare74) - IDK
@@ -95,5 +130,5 @@ Route::get('/error', function () {
 See also the list of [contributors](https://github.com/antare74) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- References: https://github.com/belajarkoding/laravel-response-formatter/blob/master/ResponseFormatter.php
+- Find on Packagist: https://packagist.org/packages/antare74/response-formatter
+- References format: https://github.com/belajarkoding/laravel-response-formatter/blob/master/ResponseFormatter.php
