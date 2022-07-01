@@ -1,0 +1,19 @@
+{
+    "name": "antare74/response-formatter",
+    "description": "This package is used to format the response in a standardized way as json format to help the frontend to understand the response and handle the API response easily.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Antare74\\ResponseFormatter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aris wahyudiyanto",
+            "email": "mc.revs404@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
