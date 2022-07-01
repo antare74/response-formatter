@@ -52,7 +52,7 @@ Laravel Version: >= 5.8
 A step by step series of examples that tell you how to get a development env running.
 
 ```
-kinda please wait for this
+composer require antare74/response-formatter
 ```
 
 ## 🎈 Usage <a name="usage"></a>
