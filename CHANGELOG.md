@@ -1,3 +1,21 @@
+commit 9d54d6f6f6103e65f2e3192ea2bc36b5a2837dfb
+Author: antare74 <mc.revs404@gmail.com>
+Date:   Fri Jul 8 16:29:24 2022 +0700
+
+    rm duplicate response
+
+commit a5362bfa4f7fcd9d025ba4bc3019fe82f9704a4a
+Author: antare74 <mc.revs404@gmail.com>
+Date:   Fri Jul 1 16:03:14 2022 +0700
+
+    fix php php ^8.0 require
+
+commit b1c8720bb71fd7f46012eba8d2cdfdfb6afd842f
+Author: antare74 <mc.revs404@gmail.com>
+Date:   Fri Jul 1 15:05:47 2022 +0700
+
+    update composer json keyword and require php version
+
 commit f90a758590f93b832f605c827e6553cc8e0d3adf
 Author: antare74 <mc.revs404@gmail.com>
 Date:   Fri Jul 1 14:04:39 2022 +0700
