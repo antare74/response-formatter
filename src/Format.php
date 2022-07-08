@@ -59,6 +59,5 @@ class Format
             unset(self::$response['pagination']);
         }
         return response()->json(self::$response, $code);
-        return response()->json(self::$response, self::$response['meta']['code']);
     }
 }
